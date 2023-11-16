@@ -11,15 +11,15 @@ def sidebar():
     with st.sidebar:
         st.markdown(
             "## How to use\n"
-            "1. Enter your [OpenAI API key](https://platform.openai.com/account/api-keys) below🔑\n"  # noqa: E501
-            "2. Upload a pdf, docx, or txt file📄\n"
-            "3. Ask a question about the document💬\n"
+            "1. Enter [OpenAI API key](https://platform.openai.com/account/api-keys) below🔑\n"  # noqa: E501
+            "2. Upload Trained Data in these formats: pdf, docx, or txt file📄\n"
+            "3. (1) Ask to Write User Stories, Features, Estimate Effort or (2) Ask Questions About Scrum and SAFe💬\n"
         )
         api_key_input = st.text_input(
             "OpenAI API Key",
             type="password",
-            placeholder="Paste your OpenAI API key here (sk-...)",
-            help="You can get your API key from https://platform.openai.com/account/api-keys.",  # noqa: E501
+            placeholder="Paste OpenAI API key here (sk-...)",
+            help="Get API Key from Offering https://platform.openai.com/account/api-keys.",  # noqa: E501
             value=os.environ.get("OPENAI_API_KEY", None)
             or st.session_state.get("OPENAI_API_KEY", ""),
         )
@@ -29,15 +29,15 @@ def sidebar():
         st.markdown("---")
         st.markdown("# About")
         st.markdown(
-            "📖KnowledgeGPT allows you to ask questions about your "
-            "documents and get accurate answers with instant citations. "
+            "🥋 AgileCop allows you to ask questions about your "
+            "SAFe and Scrum Guide, and Estimate, or write User Stories and Features. "
         )
         st.markdown(
             "This tool is a work in progress. "
-            "You can contribute to the project on [GitHub](https://github.com/mmz-001/knowledge_gpt) "  # noqa: E501
+            "You can contribute to the project on [GitHub](https://github.com/peteciank) "  # noqa: E501
             "with your feedback and suggestions💡"
         )
-        st.markdown("Made by [mmz_001](https://twitter.com/mm_sasmitha)")
+        st.markdown("Made by Pete Ciank and [mmz_001](https://twitter.com/mm_sasmitha)")
         st.markdown("---")
 
         faq()

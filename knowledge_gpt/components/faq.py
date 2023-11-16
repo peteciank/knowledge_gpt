@@ -6,7 +6,7 @@ def faq():
     st.markdown(
         """
 # FAQ
-## How does KnowledgeGPT work?
+## How does AgileCop work?
 When you upload a document, it will be divided into smaller chunks 
 and stored in a special type of database called a vector index 
 that allows for semantic search and retrieval.

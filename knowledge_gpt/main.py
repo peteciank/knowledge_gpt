@@ -39,7 +39,7 @@ openai_api_key = st.session_state.get("OPENAI_API_KEY")
 
 if not openai_api_key:
     st.warning(
-        "Enter your OpenAI API key in the sidebar. You can get a key at"
+        "OpenAI Key Required"
         " https://platform.openai.com/account/api-keys."
     )
 
